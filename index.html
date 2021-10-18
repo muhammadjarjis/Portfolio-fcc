@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <navbar class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,24 +29,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#welcome-section">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Aboutme</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
+              <a class="nav-link" href="#projects">Project</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </navbar>
 
     <!-- jumbotron -->
-    <section class="jumbotron text-center" id="home">
+    <section class="jumbotron text-center" id="welcome-section">
       <img src="img/pp.jpg" alt="" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Muhammad Jarjis</h1>
       <p class="lead mb-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <a href="https://github.com/muhammadjarjis" target="_blank" class="btn btn-dark btn-github" id="profile-link">Follow My Github <i class="bi bi-github"></i></a>
     </section>
 
     <!-- about -->
@@ -70,7 +71,7 @@
     </section>
 
     <!-- project -->
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -79,26 +80,32 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/card1.jpg" class="card-img-top" alt="project1" />
+            <div class="card project-tile">
+              <img src="img/landing.png" class="card-img-top" alt="project1" />
               <div class="card-body">
+                <h5 class="card-title">Landing Page</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://muhammadjarjis.github.io/landing-page-fcc/" class="btn btn-primary" target="_blank">Demo</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/card2.jpg" class="card-img-top" alt="project2" />
+            <div class="card project-tile">
+              <img src="img/doc.png" class="card-img-top" alt="project2" />
               <div class="card-body">
+                <h5 class="card-title">Document</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://muhammadjarjis.github.io/fcc-technical-documentation/" class="btn btn-primary" target="_blank">Demo</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/card3.jpg" class="card-img-top" alt=".project3" />
+            <div class="card project-tile">
+              <img src="img/portfolio.png" class="card-img-top" alt=".project3" />
               <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://muhammadjarjis.github.io/Portfolio-fcc/" class="btn btn-primary" target="_blank">Demo</a>
               </div>
             </div>
           </div>
@@ -153,6 +160,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

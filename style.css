@@ -4,6 +4,7 @@
 }
 .jumbotron {
   padding: 6rem;
+  height: 100vh;
 }
 section {
   padding: 5rem;
@@ -11,4 +12,14 @@ section {
 }
 img {
   width: 200px;
+}
+
+/* media queries mobile */
+@media (max-width: 576px) {
+  .btn-github {
+    width: 100%;
+  }
+  .navbar {
+    background-color: darkgray !important;
+  }
 }
